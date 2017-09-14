@@ -22,15 +22,9 @@ class Application(tk.Frame):
         self.ps.set_label(self.label_playtime)
         self.ps.start()
 
-        self.icontray = IconTray(master, self)
-        self.icontray.start()
-
     def destroy_application(self):
         self.ps.stop_loop()
-        self.icontray.stop()
-
         self.ps.join()
-        self.icontray.join()
 
         root.destroy()
         sys.exit()
