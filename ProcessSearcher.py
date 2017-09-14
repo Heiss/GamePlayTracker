@@ -28,7 +28,7 @@ class ProcessSearcher():
             try:
                 self.executable_list.append(line.decode().split()[0])
             except IndexError as err:
-                print(err)
+                pass
 
         # remove duplicates
         self.executable_list = list(set(self.executable_list))
@@ -46,7 +46,7 @@ class ProcessSearcher():
 
             # no game found? abort
             if self.current_game is None:
-                print("{}: None game found.".format(time()))
+                print("{}: No game found.".format(time()))
                 return
 
             self.current_game_started = time()
@@ -64,23 +64,23 @@ class ProcessSearcher():
             if self.current_game in self.playtime:
                 # add the time to the datastructure
                 self.playtime[self.current_game][
-                    "last_played"] = self.current_game_started
+                    "last_played"] = int(self.current_game_started)
                 self.playtime[self.current_game][
                     "playtime_seconds"] = self.playtime[self.
                                                         current_game]["playtime_seconds"] + time_running
             # game was not playing before
             else:
                 gameplay = {
-                    "last_played": int(time()),
+                    "last_played":  int(self.current_game_started)
                     "playtime_seconds": time_running,
-                    "first_played": int(time())
+                    "first_played":  int(self.current_game_started)
                 }
                 self.playtime.update({self.current_game: gameplay})
             self.current_game = None
 
             # save the data in file
             self.store_playtime_to_file()
-        print(self.playtime)
+            print(self.playtime)
 
     def search_for_trackable_exe(self):
         for line in self.executable_list:

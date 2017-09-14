@@ -1,5 +1,5 @@
 {
-  "HeroesSwitcher_x64.exe": {
+  "HeroesOfTheStorm_x64.exe": {
     "description": "Heroes of the Storm",
     "title": "Heroes of the Storm 64 Bit",
     "publisher": "Activision Blizzard",
@@ -33,6 +33,24 @@
     "description": "DOOM 2016",
     "title": "DOOM 2016",
     "publisher": "Bethesda",
+    "extras": []
+  },
+  "BioshockHD.exe": {
+    "description": "Bioshock Remastered",
+    "title": "Bioshock Remastered",
+    "publisher": "2k Games",
+    "extras": []
+  },
+  "DreadGame-Win64-Shipping.exe": {
+    "description": "Dreadnought",
+    "title": "Dreadnought",
+    "publisher": "Greybox",
+    "extras": []
+  },
+  "Bayonetta.exe": {
+    "description": "Bayonetta",
+    "title": "Bayonetta",
+    "publisher": "Sega",
     "extras": []
   }
 }
