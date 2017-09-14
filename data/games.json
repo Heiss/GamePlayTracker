@@ -1,12 +1,38 @@
 {
-    "Code.exe": {
-      "description": "asd",
-      "title": "asd",
-      "publisher": "Microsoft Corp.",
-      "extras":[]},
-    "chrome.exe": {
-      "description": "asd",
-      "title": "asd",
-      "publisher": "Google Corp.",
-      "extras":[]}
+  "HeroesSwitcher_x64.exe": {
+    "description": "Heroes of the Storm",
+    "title": "Heroes of the Storm 64 Bit",
+    "publisher": "Activision Blizzard",
+    "extras": []
+  },
+  "HeroesSwitcher.exe": {
+    "description": "Heroes of the Storm",
+    "title": "Heroes of the Storm",
+    "publisher": "Activision Blizzard",
+    "extras": []
+  },
+  "OrcsMustDie2.exe": {
+    "description": "Orcs must Die 2",
+    "title": "Orcs must Die 2",
+    "publisher": "",
+    "extras": []
+  },
+  "OutlastLauncher.exe": {
+    "description": "Outlast",
+    "title": "Outlast",
+    "publisher": "",
+    "extras": []
+  },
+  "Northgard.exe": {
+    "description": "Northgard",
+    "title": "Northgard",
+    "publisher": "",
+    "extras": []
+  },
+  "DOOMx64.exe": {
+    "description": "DOOM 2016",
+    "title": "DOOM 2016",
+    "publisher": "Bethesda",
+    "extras": []
   }
+}
