@@ -52,5 +52,17 @@
     "title": "Bayonetta",
     "publisher": "Sega",
     "extras": []
+  },
+  "HaloWars2_WinAppDX12Final.exe": {
+    "description": "Halo Wars 2",
+    "title": "Halo Wars 2",
+    "publisher": "Microsoft Corp.",
+    "extras": []
+  },
+  "xgameFinal.exe": {
+    "description": "Halo Wars: Definitive Game",
+    "title": "Halo Wars: Definitive Game",
+    "publisher": "Microsoft  Corp.",
+    "extras": []
   }
 }

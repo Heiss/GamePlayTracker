@@ -6,10 +6,10 @@ class Tracker():
 
     def __init__(self):
         self.pr = ProcessSearcher()
-        
+
         while self.isRunning:
             self.loop()
-    
+
     def loop(self):
         self.pr.loop()
 
