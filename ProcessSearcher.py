@@ -2,7 +2,7 @@ import subprocess
 import json
 from time import time, strftime, gmtime, sleep
 import threading
-
+from os import path
 
 class ProcessSearcher(threading.Thread):
     executable_list = []
@@ -21,8 +21,12 @@ class ProcessSearcher(threading.Thread):
         with open('data/games.json') as data_file:
             self.known_games = json.load(data_file)
 
-        with open('data/playtime.json') as data_file:
-            self.playtime = json.load(data_file)
+        playtime_file = 'data/playtime.json'
+        if not (path.isfile(playtime_file)):
+            self.playtime = {}
+        else:
+            with open(playtime_file) as data_file:
+                self.playtime = json.load(data_file)
 
     def run(self):
         self.isRunning = True

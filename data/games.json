@@ -64,5 +64,11 @@
     "title": "Halo Wars: Definitive Game",
     "publisher": "Microsoft  Corp.",
     "extras": []
+  },
+  "thedivision.exe": {
+    "description": "The Divison",
+    "title": "The Divison",
+    "publisher": "Ubisoft",
+    "extras": []
   }
 }
